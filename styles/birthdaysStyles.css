@@ -151,3 +151,38 @@
     z-index: -1;
     left: 10px;
 }
+
+@media (max-width: 768px){
+    .Birthdays{
+        border:10px solid pink;
+        
+    }
+    .headerBirthdays{
+        display: flex;
+        flex-direction: column;
+    }
+    .descriptionBirthDay{
+        text-align: justify;
+        font-size: 120%;
+        padding: 1.8%;
+    }
+    .balloonsImg{
+        width: 25%;
+        height: auto;
+        margin: 10px;
+    }
+    #left{
+        transform: rotate(0);
+    }
+    
+    #right{
+        transform: rotate(0);
+        justify-self: center;
+    }
+    .divGift{
+        display: flex;
+        height: 350px;
+        align-items: center;
+        margin-left: 35%;
+    }
+}
