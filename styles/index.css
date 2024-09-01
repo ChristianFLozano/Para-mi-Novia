@@ -1,0 +1,197 @@
+*{
+    margin: 0%;
+}
+
+body {
+    background-color: #ECE0FF;
+    font-size: 16px;
+    width: 100%;
+}
+
+.mainHeader {
+    display: grid;
+    grid-template-columns: 1fr .8fr 1fr    ;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 1%;
+    height: auto;
+    width: auto;
+    background-color: #BF96FE;
+}
+
+.timeOur {
+    color: #ece0ff;
+    font-size: 2.5em;
+}
+
+.tittle {
+    font-size: 3.5em;
+    margin: 0;
+    color: #ECE0FF;
+}
+
+.imgHeader{
+    height: auto;
+    width: 18%;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    padding: 1%;
+    gap: 1%;
+}
+
+.introductionText {
+    padding: 2%;
+    width: 45%; 
+    text-align: justify;
+    color: black;
+}
+
+.introductionImg {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introductionImg img {
+    width: 80%;
+    height: auto;
+    border-radius: 9%;
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.introductionImg img:hover{
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+
+.introductionText h3{
+    font-size: 2.5em;
+}
+
+.introductionText p{
+    font-size: 1.7rem;
+}
+.topMomentsHeader{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 2.6rem;
+}
+.moments{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2%;
+}
+.moment{
+    display: grid;
+    padding: 1.5%;
+    background-color:#F8BAF7;
+    width: 25%;
+    height: 35%;
+    border-radius: 9%;
+}
+
+.Direction{
+    height: 80px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linkDirection{
+    color: white;
+    font-size: 150%;
+}
+
+
+
+@media (max-width: 768px){
+    .swal2-popup {
+        width: 250px;
+    }
+    
+    .mainHeader{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr .4fr 1fr;
+    }
+    .timeOur {
+        font-size: 1.8em;
+    }
+    
+    .tittle {
+        font-size: 2.5em;
+    }
+    .introduction{
+        flex-direction: column;
+    }
+
+    .introductionText{
+        width: 95%;
+        color: rgb(0, 0, 0);
+    }
+    .introductionText h3{
+        font-size: 1.8em;
+    }
+
+    .introductionImg{
+        width: 95%;
+    }
+
+    .introductionImg img {
+        width: 86%;
+        height: auto;
+        border-radius: 5%;
+    }
+
+    .introductionText p{
+        
+        font-size: 1.2rem;
+    }
+    .topMomentsHeader{
+        font-size: 1.6rem;
+    }
+    .Birthdays{
+        border:10px solid pink;
+        
+    }
+    .headerBirthdays{
+        display: flex;
+        flex-direction: column;
+    }
+    .descriptionBirthDay{
+        text-align: justify;
+        font-size: 120%;
+        padding: 1.8%;
+    }
+    .balloonsImg{
+        width: 25%;
+        height: auto;
+        margin: 10px;
+    }
+    #left{
+        transform: rotate(0);
+    }
+    
+    #right{
+        transform: rotate(0);
+        justify-self: center;
+    }
+    .divGift{
+        display: flex;
+        height: 350px;
+        align-items: center;
+        margin-left: 35%;
+    }
+    .linkDirection{
+        font-size: 100%;
+    }
+    
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina para mi novia</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/luxon@3.1.1/build/global/luxon.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +23,11 @@
             <h2 class="tittle"> Una historia sin fin</h2>
         </div>
     </header>
+    <header class="Direction">
+        <a class="linkDirection" href="./firstPage.html" target="_blank" rel="firstPage"> Primer Pagina</a>
+        <a class="linkDirection" href="./birthdaysPages.html" target="_blank" rel="Birthdays"> Cumpleaños</a>
+        <a class="linkDirection" href="./games.html" target="_blank" rel="Birthdays"> Juegos</a>
+    </header>
     <main>
         <section class="introduction">
             <div class="introductionText">
@@ -40,33 +45,7 @@
                 <img src="./assets/CollageOur.png" alt="Collage" onclick="collageFunction()">
             </div>
         </section>
-        <section class="Birthdays">
-            <div class="headerBirthdays">
-                <img src="./assets/balloons-party-illustration-free-png.webp "alt="globos" class="balloonsImg" id="left">
-                <div class="tittleBD">
-                    <h2>Feliz Cumpleaños</h2> 
-                </div>
-                <img src="./assets/balloons-party-illustration-free-png.webp "alt="globos" class="balloonsImg" id="right">   
-            </div>
-            <div>
-                <div class="descriptionBirthDay">
-                    <h3>Este tu 21 cumpleaños, espero y sea el mejor de todos ademas de que sea el inicio de los mejores, este tiempo que hemos estado
-                        juntos ha sido increible, hoy cumpleaños esta persona que amo y con la cual he pasado los mejores dias. Este es una parte de tus
-                        regalos, la verdad tu te mereces muchisimo más, te mereces cada una de las estrellas que existen en el universo, siempre seras la mejor 
-                        persona, sin más que decir abre tu regalo.
-                    </h3>
-                </div>
-                <div class="divGift">
-                    <div class="giftContainer"> 
-                        <div class="gift">
-                            <input type="checkbox" id="click">
-                            <label for="click" class="click"></label>
-                            <div class="wishes">Te amo y te amaré eternamente</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
     </main>
 
     <script src="index.js"></script>

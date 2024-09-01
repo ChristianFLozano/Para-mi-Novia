@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+}
+
+.Birthdays{
+    display: flex;
+    border:30px solid pink;
+    background-color: #FAD0D0 ;
+    flex-direction: column;
+}
+
+.balloonsImg{
+    width: 35%;
+    height: auto;
+    margin: 50px;
+}
+#left{
+    transform: rotate(-45deg);
+}
+
+#right{
+    transform: rotate(45deg);
+    justify-self: right;
+}
+
+.headerBirthdays{
+    display: grid;
+    font-size: 210%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Happy Monkey", system-ui;
+    text-align: center;
+    gap: 30px;
+    grid-template-columns:.5fr 2fr .5fr;
+}
+
+.tittleBD{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.descriptionBirthDay{
+    text-align: justify;
+    font-size: 175%;
+    padding: 1.5%;
+}
+
+.divGift{
+    display: flex;
+    height: 350px;
+    align-items: center;
+    margin-left: 45%;
+}
+
+.giftContainer{
+    position: relative;
+}
+
+.giftContainer::before{
+    content: "";
+    position:absolute;
+    width: 170px;
+    height: 20PX;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    top: 90px;
+    left: -10px;
+}
+
+.gift{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background-color: pink;
+}
+.gift::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 100px;
+    background-color: red;
+    left: 62px;
+}
+.gift::after{
+    content: "";
+    position: absolute;
+    box-shadow: inset 0 10px rgba(0, 0, 0, 0.3);
+    width: 150px;
+    height: 100px;
+
+}
+
+#click{
+    display: none;   
+}
+
+.click{
+    position: absolute;
+    background-color: pink;
+    width: 170px;
+    height: 40px;
+    top: -40px;
+    left: -10px;
+    transform-origin: bottom left;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.click::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 40px;
+    background-color: red;
+    left: 72px;
+}
+
+.click::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 0;
+    border-bottom: 30px solid red;
+    border-top: 30px solid red;
+    border-left: 0 solid transparent;
+    border-right: 30PX solid transparent;
+    transform: rotate(-90deg);
+    left: 65px;
+    top: -47px;
+}
+
+#click:checked + .click{
+    transform: rotate(-110deg) scale(0.85);
+}
+
+#click:checked~.wishes{
+    transform: translateY(-120px);
+    z-index: 1;
+}
+
+.wishes{
+    position: absolute;
+    transition: .5s;
+    color: #333;
+    font-size: 26px;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: -1;
+    left: 10px;
+}
